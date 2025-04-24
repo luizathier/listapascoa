@@ -59,7 +59,10 @@ button {
 #carrinho {
     width: 150px;
     height: 80px;
-    background-color:rgb(169, 215, 180);
     float: right;
 
+}
+
+button:hover {
+    background-color: lightgray;
 }
