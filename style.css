@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d19bcc31-33e4-448c-a5d4-fb8f62da91d1/dbreu5l-9f75ffa3-e535-48e5-93bd-a3c7817606ce.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QxOWJjYzMxLTMzZTQtNDQ4Yy1hNWQ0LWZiOGY2MmRhOTFkMVwvZGJyZXU1bC05Zjc1ZmZhMy1lNTM1LTQ4ZTUtOTNiZC1hM2M3ODE3NjA2Y2UucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pRqz2IlMA5FVI5n0MnVOiZV90CDv8HAJhXtzsqGKx0E);
+   
+  }
+
+  h1 {
+      color:white;
+      font-family: cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px black;
+  }
+
+  #container-produtos {
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .produto {
+     
+    width: 200px;
+    border-style: outset;
+    border-radius: 10px;
+    background: rgb(169, 215, 180);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    border-style: outset;
+  }
+
+  .produto img {
+      border-style: outset;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .produto h2 {
+     
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+
+  .produto p {
+     
+    font-weight: bold;
+    color: #2a2de7;
+  }
+
+button {
+    font-family: cursive;
+    border-radius: 10px;
+}
+
+#carrinho {
+    width: 150px;
+    height: 80px;
+    background-color:rgb(169, 215, 180);
+    float: right;
+
+}
