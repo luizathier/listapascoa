@@ -26,7 +26,31 @@ const produtos = [
     }
   ];
 
+  const carrinho = [];
   const container = document.getElementById('container-produtos');
+  const carrinhoDiv = document.getElementById('carrinho');
+  const botaoCarrinho = document.getElementById('botaoCarrinho');
+  const itensCarrinho = document.getElementById('itensCarrinho');
+  const totalSpan = document.getElementById('total');
+
+  botaoCarrinho.addEventListener('click', () => {
+    carrinhoDiv.style.display = carrinhoDiv.style.display === 'none' ? 'block' : 'none';
+  });
+
+  function atualizarCarrinho() {
+    itensCarrinho.innerHTML = '';
+    let total = 0;
+
+    carrinho.forEach(produto => {
+      const div = document.createElement('div');
+      div.classList.add('item-carrinho');
+      div.innerHTML = `<strong>${produto.nome}</strong><br>R$ ${produto.preco.toFixed(2)}`;
+      itensCarrinho.appendChild(div);
+      total += produto.preco;
+    });
+
+    totalSpan.innerText = `Total: R$ ${total.toFixed(2)}`;
+  }
 
   produtos.forEach(produto => {
     const box = document.createElement('div');
@@ -35,7 +59,11 @@ const produtos = [
       <img src="${produto.foto}" alt="${produto.nome}">
       <h2>${produto.nome}</h2>
       <p>R$ ${produto.preco.toFixed(2)}</p>
-      <button>Adicionar ao Carrinho</button>
+      <button>Adicionar ao carrinho</button>
     `;
+    box.querySelector('button').addEventListener('click', () => {
+      carrinho.push(produto);
+      atualizarCarrinho();
+    });
     container.appendChild(box);
   });

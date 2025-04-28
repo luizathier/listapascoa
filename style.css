@@ -56,13 +56,47 @@ button {
     border-radius: 10px;
 }
 
-#carrinho {
-    width: 150px;
-    height: 80px;
-    float: right;
-
-}
 
 button:hover {
     background-color: lightgray;
+}
+
+#carrinho {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color:rgb(169, 215, 180) ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  display: none;
+  max-width: 300px;
+}
+
+#carrinho h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.item-carrinho {
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #797cde;
+  padding-bottom: 5px;
+}
+
+#total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#botaoCarrinho {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgb(169, 215, 180);
+  color: white;
+  padding: 10px 15px;
+  border-style: groove;
+  border-radius: 10px;
+  cursor: pointer;
 }
